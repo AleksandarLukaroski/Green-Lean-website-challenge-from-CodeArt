@@ -1,0 +1,25 @@
+@use "../utilities" as u;
+
+.call-to-action-button {
+    background-color: u.$yellow;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: u.$black;
+    display: block;
+    width: 80%;
+    max-width: 60rem;
+    margin: 4rem auto 2rem auto;
+    padding: 1.2rem 2rem;
+    font-weight: 800;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-align: center;
+
+    @include u.breakpoint-up(medium) {
+        font-size: 3rem;
+    }
+
+    &:hover {
+        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+        background: linear-gradient(180deg, #ffe600 0%, #ffc700 100%);
+    }
+}

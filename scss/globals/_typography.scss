@@ -1,0 +1,53 @@
+@use "../utilities" as u;
+
+a {
+    text-decoration: none;
+    color: u.$black;
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 3rem;
+    @include u.breakpoint-up(large) {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+h2,
+h3 {
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+p {
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+    text-align: center;
+
+    @include u.breakpoint-up(large) {
+        font-size: 2rem;
+    }
+}
+
+span {
+    font-weight: bold;
+}

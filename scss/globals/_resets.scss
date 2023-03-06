@@ -1,0 +1,43 @@
+@use "../utilities" as u;
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    animation: animate-on-page-reload 1.5s;
+}
+
+@keyframes animate-on-page-reload {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: u.$font;
+    color: u.$black;
+}
+
+button {
+    color: u.$black;
+    background: none;
+    border: none;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 1.2rem 2rem;
+    margin: 1rem 0 2.5rem;
+    cursor: pointer;
+}

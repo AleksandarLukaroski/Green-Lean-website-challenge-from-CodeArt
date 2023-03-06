@@ -1,0 +1,12 @@
+@use "../utilities" as u;
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 6rem 5%;
+    // border: 2px solid red;
+
+    @include u.breakpoint-up(xlarge) {
+        padding: 6rem 0;
+    }
+}
